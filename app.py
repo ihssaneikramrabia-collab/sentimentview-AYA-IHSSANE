@@ -484,7 +484,6 @@ with st.container(border=True):
 #         )
 #     else:
 #         st.warning("Performance metrics columns not found.")
-
 # except FileNotFoundError:
 #     st.warning("model_comparison.csv not found.")
 
