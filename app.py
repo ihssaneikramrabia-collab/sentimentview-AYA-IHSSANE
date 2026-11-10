@@ -611,7 +611,7 @@ if analyze:
 # FOOTER
 # ============================================
 
-st.markdown("""
+st.markdown("""s
 <div class="footer">
     <p>✦ SENTIVIEW — AI SENTIMENT ANALYZER</p>
     <p>Powered by Machine Learning | Logistic Regression</p>
