@@ -1,4 +1,3 @@
-
 import streamlit as st
 import joblib
 import re
@@ -223,7 +222,6 @@ header[data-testid="stHeader"] {
 # ============================================
 # LOAD MODEL
 # ============================================
-
 @st.cache_resource
 def load_model():
     return joblib.load("sentiment_model.pkl")
@@ -321,13 +319,13 @@ with st.sidebar:
     st.markdown("### 📊 Model Information")
 
     st.markdown("""
-    **Model:** Logistic Regression
+    Model: Logistic Regression
 
-    **Dataset:** IMDb Movie Reviews
+    Dataset: IMDb Movie Reviews
 
-    **Task:** Binary Classification
+    Task: Binary Classification
 
-    **Classes:** Positive / Negative
+    Classes: Positive / Negative
     """)
 
     st.divider()
@@ -422,8 +420,7 @@ st.markdown(
 
 with st.container(border=True):
 
-    st.markdown("**Your Review**")
-
+    st.markdown("Your Review")
     examples = {
         "Choose an example...": "",
         "Positive example": (
@@ -479,7 +476,7 @@ with st.container(border=True):
 
 #     if available_metrics:
 #         st.bar_chart(
-#             results[available_metrics],
+#             results[available_metrics],=
 #             use_container_width=True
 #         )
 #     else:
@@ -567,7 +564,6 @@ if analyze:
                 )
 
                 st.markdown("### Confidence Score")
-
                 st.progress(
                     int(round(confidence))
                 )
@@ -599,7 +595,7 @@ if analyze:
                     class_label = str(class_name).title()
 
                     st.write(
-                        f"**{class_label}** — {probability*100:.2f}%"
+                        f"{class_label} — {probability*100:.2f}%"
                     )
 
                     st.progress(
@@ -622,4 +618,3 @@ st.markdown("""
     <p>IMDb Movie Reviews Dataset</p>
 </div>
 """, unsafe_allow_html=True)
-
